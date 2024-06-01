@@ -1,0 +1,428 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    z-index: 2;
+}
+
+body {
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    margin: 0;
+    width: auto;
+    height: 100vh;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(0deg, #080708 23.8%, #B388EB 92%);
+    overflow: hidden;
+}
+
+.container-generale{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.tables {
+    left: 50%;
+    width: 50%;
+    height: 65%;
+    overflow-y: scroll;
+    color: #fff;
+    margin-right: 1%;
+    border-radius: 5px;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.tables th{
+    text-align: left;
+    color: #080708;
+}
+
+.tables td {
+    overflow: visible;
+    border-right: 5%;
+}
+
+.header-container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.container {
+    width: 80%;
+    height: 20%;
+    margin: 0 auto;
+}
+
+header {
+    color:#080708;
+    padding: .5% 0;
+}
+
+header h1 {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+.hero {
+    padding: .5% 0;
+    color: #FFFFFF;
+}
+
+.hero h2 {
+    color: #080708;
+    font-size: 2.5em;
+    margin-bottom: 1%;
+}
+
+.hero p {
+    font-size: 1.2em;
+}
+
+
+.buttons{
+    padding: 15px 0;
+    margin: 0 auto;
+    width: 50%;
+    height: 76vh;
+    overflow: hidden;
+    border-radius: 10px;
+    border: 3px #FFFF;
+}
+
+#check1{
+    display: none;
+}
+
+.acquisto-container{
+    position: relative;
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    left: 17.5%;
+}
+
+.acquisto-container label {
+    color: #FFFF;
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-size: 3em;
+    font-weight: bold;
+    transition: 1s ease-in-out;
+    align-self: flex-start;
+    margin-left: 20px;
+}
+
+.acquisto-input{
+    display: flex;
+    width: 90%;
+}
+
+#input1 {
+    border-top-left-radius:  5px;
+    border-bottom-left-radius:  5px;
+    width: 50%;
+}
+
+#input2 {
+    border-top-right-radius:  5px;
+    border-bottom-right-radius:  5px;
+    border-left: solid 2px rgb(209, 209, 209) ;
+    width: 50%;
+}
+
+.acquisto-container input {
+    margin-bottom: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+    height: 40px;
+    background: #fff;
+    padding: 10px;
+    outline: none;
+    border: none;
+    flex: auto;
+}
+
+.acquisto-input select {
+    margin-bottom: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+    height: 40px;
+    background: #fff;
+    padding: 10px;
+    outline: none;
+    border: none;
+    flex: auto;
+}
+
+#input3 {
+    border-radius: 5px;
+    width: 90%;
+}
+
+#form-acquisto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#form-acquisto select {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 40px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    flex: auto;
+    margin-bottom: 10px;
+}
+
+button {
+    width: 90%;
+    height: 40px;
+    color: #fff;
+    background-color: black;
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 20px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    transition: .2s ease-in;
+    cursor: pointer;
+}
+
+.acquisto-container button {
+    margin-top: 0px;
+}
+
+.buttons button:hover{
+    background-color: #B388EB;
+}
+
+.prenotazione-container {
+    position: relative;
+    height: 80vh;
+    background-color: #080708;
+    color: #fff;
+    width: 70%;
+    border-radius: 5%;
+    transform: translateY(-42vh);
+    transition: .8s ease-in-out;
+    left: 17.5%;
+    z-index: 10;
+}
+
+#form-prenotazione {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.prenotazione-container label {
+    color: #FFFF;
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    font-size: 3em;
+    margin-top: 20px;
+    margin-left: 40px;
+    margin-bottom: 10px;
+    margin-right: 30px;
+    font-weight: bold;
+    transition: 1s ease-in-out;
+    transform: scale(0.9);
+    align-self: flex-start;
+    
+}
+
+.prenotazione-container input {
+    width: 90%;
+    height: 40px;
+    background: #fff;
+    margin-top: 20px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+.prenotazione-container select {
+    width: 90%;
+    height: 40px;
+    background: #fff;
+    margin-top: 20px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+.header-container button{
+    background-color: #B388EB;
+    background: transparent;
+    width: 10%;
+    position: absolute;
+    top: 10px;
+    left: 88%;
+    transition: .2s ease-in;
+}
+
+.header-container button:hover{
+    background-color: #080708;
+}
+
+.icona-carrello-container {
+    transition: 0.5s ease;
+    background: transparent;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 1%;
+    left: 83%;
+}
+
+.icona-carrello-container i {
+    transition: 0.5s ease;
+    color: #fff;
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#carrello-label :hover{
+    background-color: #080708;
+    cursor: pointer;
+}
+
+#check3 {
+    display: none;
+}
+
+#check3:checked ~ .icona-carrello-container i {
+    background-color: #080708;
+}
+
+#logout-button {
+    background: transparent;
+    height: 10%;
+    width: 10%;
+    position: absolute;
+    top: 10px;
+    left: 88%;
+    transition: .2s ease-in;
+    overflow: hidden;
+}
+
+#logout-button:hover {
+    background-color: #080708;
+}
+
+.prova {
+    background-color: #080708;
+    transition: 0.5s ease;
+    width: 50vh;
+    height: 50vh;
+    position: absolute;
+    bottom: 42%;
+    left: 100%;
+    transform: translateX(50vh);
+    border-radius: 10px;
+    z-index: 10;
+}
+
+.dati-carrello-container {
+    background-color: #080708;
+    color: #fff;
+    width: 100%;
+    height: 85%;
+    overflow-y: scroll;
+    position: relative;
+    padding: 3%;
+    border-radius: 10px;
+}
+
+.dati-carrello-container table th {
+    text-align: left;
+}
+
+#check3:checked ~ .prova{
+    transform: translateX(-70vh);
+}
+
+.carrello-buttons {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+#conferma-button {
+    background-color: #080708;
+    transition: .2s ease-in;
+    width: 35%;
+    position: absolute;
+    left: 10%;
+    top: 83%;
+}
+
+#azzera-button {
+    background-color: #080708;
+    transition: .2s ease-in;
+    width: 35%;
+    position: absolute;
+    left: 55%;
+    top: 83%;
+}
+
+#conferma-button:hover {
+    background-color: #B388EB;
+}
+
+#azzera-button:hover {
+    background-color: #B388EB;
+}
+
+footer {
+    position: absolute;
+    bottom: 1%;
+    width: 100%;
+    color: #FFFFFF;
+    padding: 20px 0;
+    text-align: center;
+    margin-top: 50px;
+    align-items: stretch;
+    z-index: 1;
+}

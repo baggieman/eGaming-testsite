@@ -1,0 +1,6 @@
+DATI CARTA DI CREDITO:
+
+- Numero:   4471-4946-3888-9318
+- Nome:     Mario Rossi
+- CVV:      824
+- Scadenza: 07/25
